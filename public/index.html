@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h2 class="mb-4">Welcome to Chat Application</h2>
+    <h2 class="mb-4">Welcome to Chat App</h2>
 
     <div id="chat-container" class="container mt-5 p-4 rounded bg-light shadow">
       <div id="user-container" class="text-center mb-4">
@@ -44,11 +44,10 @@
           placeholder="Type your message here..."
           disabled
         />
-        <div class="input-group-append">
-          <button id="send-button" class="btn btn-success rounded" disabled>
-            Send
-          </button>
-        </div>
+
+        <button id="send-button" class="btn btn-success rounded" disabled>
+          Send
+        </button>
       </div>
     </div>
     <script src="/socket.io/socket.io.js"></script>

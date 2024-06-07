@@ -18,17 +18,31 @@ h2 {
 }
 
 #username-input {
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: calc(80% - 50px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
 #join-button {
   background-color: #007bff;
+  color: white;
   border: none;
-  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #join-button:hover {
   background-color: #0056b3;
+}
+#join-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 #messages {
@@ -38,19 +52,34 @@ h2 {
   padding: 10px;
 }
 
+/* Input field for messages with rounded corners and shadow */
 #message-input {
-  border: 1px solid #ccc;
-  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 10px 15px;
+  width: calc(80% - 50px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+#message-input:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
 }
 
 #message-input:disabled {
   background-color: #e9ecef;
 }
-
+/* Styling for the send button */
 #send-button {
   background-color: #28a745;
+  color: white;
   border: none;
-  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #send-button:hover {
@@ -59,6 +88,12 @@ h2 {
 
 #send-button:disabled {
   background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+#send-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
 }
 
 .input-group .input-group-append .btn {
