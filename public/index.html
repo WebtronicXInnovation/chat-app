@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ775eGhG4bXCDroNkttGpVx1MwlD5mX9en/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-iKb37aX0x3b1hN1ue43fcNqGp0pJSQ3hO4H5E5TEF6YxEm5H4fyIjM3+sk7aZX4B"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h2 class="mb-4">Welcome to Chat App</h2>
+
+    <div id="chat-container" class="container mt-5 p-4 rounded bg-light shadow">
+      <div id="user-container" class="text-center mb-4">
+        <input
+          id="username-input"
+          type="text"
+          class="form-control mb-3 rounded"
+          placeholder="Enter your username"
+        />
+        <button id="join-button" class="btn btn-primary btn-lg rounded">
+          Join Chat
+        </button>
+      </div>
+      <div
+        id="messages"
+        class="border rounded p-3 mb-3 bg-white"
+        style="height: 300px; overflow-y: scroll"
+      ></div>
+      <div class="input-group">
+        <input
+          id="message-input"
+          type="text"
+          class="form-control rounded"
+          placeholder="Type your message here..."
+          disabled
+        />
+        <div class="input-group-append">
+          <button id="send-button" class="btn btn-success rounded" disabled>
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

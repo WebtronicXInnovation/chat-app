@@ -1,0 +1,138 @@
+body {
+  background-color: #f4f4f9;
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+h2 {
+  text-align: center;
+}
+#chat-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#user-container h2 {
+  color: #333;
+}
+
+#username-input {
+  border: 1px solid #ccc;
+}
+
+#join-button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+}
+
+#join-button:hover {
+  background-color: #0056b3;
+}
+
+#messages {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#message-input {
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#message-input:disabled {
+  background-color: #e9ecef;
+}
+
+#send-button {
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+}
+
+#send-button:hover {
+  background-color: #218838;
+}
+
+#send-button:disabled {
+  background-color: #6c757d;
+}
+
+.input-group .input-group-append .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+.message .reply-to {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.message button {
+  margin-left: 10px;
+  background-color: #17a2b8;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.message button:hover {
+  background-color: #138496;
+}
+
+.message:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+.message:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 60%;
+}
+.message.right {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+.message.left {
+  background-color: #fff;
+  align-self: flex-start;
+}
+.message-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.reply-to {
+  font-size: 0.8em;
+  color: gray;
+}
+
+input:focus {
+  outline: none !important;
+  box-shadow: 0 0 5px #719ece;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+i.fas.fa-reply {
+  color: #007bff;
+}
