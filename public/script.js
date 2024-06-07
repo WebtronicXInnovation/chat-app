@@ -24,9 +24,9 @@ function addMessage(username, message, replyToMessage, isCurrentUser) {
   }
 
   const replyButton = document.createElement("button");
-  // replyButton.textContent = "Reply";
-  replyButton.classList.add("btn", "btn-link", "p-0", "ml-2"); // Add Bootstrap classes for better styling
-  replyButton.innerHTML = '<i class="fas fa-reply"></i>'; // Font Awesome reply icon
+  replyButton.textContent = "Reply";
+ // replyButton.classList.add("btn", "btn-link", "p-0", "ml-2"); // Add Bootstrap classes for better styling
+  //replyButton.innerHTML = '<i class="fas fa-reply"></i>'; // Font Awesome reply icon
 
   replyButton.onclick = () => {
     replyTo = message;
