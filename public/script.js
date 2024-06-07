@@ -103,3 +103,14 @@ socket.on("user joined", function (username) {
   item.style.fontStyle = "italic";
   document.getElementById("messages").appendChild(item);
 });
+
+
+//user left
+socket.on("user left", function (username) {
+  const item = document.createElement("div");
+  item.classList.add("message");
+  item.textContent = `${username} left the chat`;
+  item.style.fontStyle = "italic";
+  document.getElementById("messages").appendChild(item);
+});
+//end
