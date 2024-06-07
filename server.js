@@ -27,22 +27,6 @@ io.on("connection", socket => {
   });
 });
 
-
-// exit
 server.listen(3000, () => {
-  console.log("listening on *:3000");
-
-  // Capture command line input for exiting the server
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  rl.question('Type "exit" to stop the server: ', answer => {
-    if (answer.trim().toLowerCase() === "exit") {
-      console.log("Stopping server...");
-      server.close();
-    }
-    rl.close();
-  });
+    console.log('listening on *:3000');
 });
